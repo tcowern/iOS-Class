@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "859DBD33335E75A4A872D8DC94058BD9B755A0D8",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "859DBD33335E75A4A872D8DC94058BD9B755A0D8" : 9223372036854775807,
+    "7AF5800A2162F4D325534AD6F13BF882F170BF84" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F6F9EE4E-0B27-4D7E-AF7F-CA8A0C028B6C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "859DBD33335E75A4A872D8DC94058BD9B755A0D8" : "iOS-Class\/",
+    "7AF5800A2162F4D325534AD6F13BF882F170BF84" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SaveTheWorld",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SaveTheWorld\/SaveTheWorld.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/tcowern\/iOS-Class.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7AF5800A2162F4D325534AD6F13BF882F170BF84"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/tcowern\/iOS-Class.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "859DBD33335E75A4A872D8DC94058BD9B755A0D8"
+    }
+  ]
+}
