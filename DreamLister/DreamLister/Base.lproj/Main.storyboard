@@ -33,13 +33,16 @@
                                     <segment title="Title"/>
                                 </segments>
                                 <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="segmentChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="JhY-Kl-4oX"/>
+                                </connections>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="151" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qWm-22-eEO">
                                 <rect key="frame" x="16" y="132" width="343" height="535"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemCell" rowHeight="150" id="Asz-Xx-9Q3" customClass="ItemCell" customModule="DreamLister">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ItemCell" rowHeight="150" id="Asz-Xx-9Q3" customClass="ItemCell" customModule="DreamLister">
                                         <rect key="frame" x="0.0" y="28" width="343" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Asz-Xx-9Q3" id="kiO-FN-FIG">
@@ -47,10 +50,10 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hmA-K8-iYy" customClass="ItemCell" customModule="DreamLister" customModuleProvider="target">
-                                                    <rect key="frame" x="8" y="8" width="272" height="134"/>
+                                                    <rect key="frame" x="8" y="8" width="327" height="134"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tesla Model S" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1lT-Tr-b1E">
-                                                            <rect key="frame" x="116" y="8" width="148" height="21"/>
+                                                            <rect key="frame" x="116" y="8" width="203" height="21"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="21" id="Gm8-8Y-VHM"/>
                                                             </constraints>
@@ -59,7 +62,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$80,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6q9-AY-Mqf">
-                                                            <rect key="frame" x="116" y="37" width="148" height="21"/>
+                                                            <rect key="frame" x="116" y="37" width="203" height="21"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="21" id="B8M-V2-VTO"/>
                                                             </constraints>
@@ -68,7 +71,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is where the details go" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z8Z-ic-Zil">
-                                                            <rect key="frame" x="116" y="66" width="148" height="52"/>
+                                                            <rect key="frame" x="116" y="66" width="203" height="52"/>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
@@ -108,9 +111,6 @@
                                                 <constraint firstItem="hmA-K8-iYy" firstAttribute="leading" secondItem="kiO-FN-FIG" secondAttribute="leading" constant="8" id="wDd-dv-zfk"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
-                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <outlet property="details" destination="Z8Z-ic-Zil" id="acf-98-e4c"/>
                                             <outlet property="price" destination="6q9-AY-Mqf" id="UtM-NN-2xv"/>
@@ -162,7 +162,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imagePick.png" translatesAutoresizingMaskIntoConstraints="NO" id="s7Q-Tc-B7U">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imagePick.png" translatesAutoresizingMaskIntoConstraints="NO" id="s7Q-Tc-B7U">
                                 <rect key="frame" x="24" y="72" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="5Gs-iK-zUv"/>
@@ -175,6 +175,9 @@
                                     <constraint firstAttribute="width" constant="100" id="1YO-Oh-o0t"/>
                                     <constraint firstAttribute="height" constant="100" id="bIV-gE-bcy"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="addImage:" destination="lhI-NG-aF7" eventType="touchUpInside" id="NQT-K4-h0t"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1IR-w7-VCV" customClass="CustomTextField" customModule="DreamLister" customModuleProvider="target">
                                 <rect key="frame" x="132" y="82" width="227" height="40"/>
@@ -193,6 +196,7 @@
                                     <constraint firstAttribute="height" constant="40" id="msT-3p-APZ"/>
                                 </constraints>
                                 <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Details" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ErI-2D-i2r" customClass="CustomTextField" customModule="DreamLister" customModuleProvider="target">
@@ -221,6 +225,9 @@
                                 <state key="normal" title="Save Item">
                                     <color key="titleColor" red="0.72277768782383411" green="0.72277768782383411" blue="0.72277768782383411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="savedPressed:" destination="lhI-NG-aF7" eventType="touchUpInside" id="fvB-gi-8hQ"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a Store" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4SH-dE-Jfa">
                                 <rect key="frame" x="125" y="358" width="125" height="21"/>
@@ -261,12 +268,16 @@
                     <navigationItem key="navigationItem" title="Add/Edit" id="xm6-pS-xuZ">
                         <barButtonItem key="rightBarButtonItem" systemItem="trash" id="abU-15-bxL">
                             <color key="tintColor" red="1" green="0.2229682549" blue="0.184640577" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="deletePressed:" destination="lhI-NG-aF7" id="Xdf-gD-efo"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="detailsField" destination="ErI-2D-i2r" id="l9f-0l-5mM"/>
                         <outlet property="priceField" destination="7Cu-FN-Z0O" id="XSI-ME-S1u"/>
                         <outlet property="storePicker" destination="qxS-Af-QfH" id="fXg-BH-UDZ"/>
+                        <outlet property="thumbImage" destination="s7Q-Tc-B7U" id="1uO-93-9Dg"/>
                         <outlet property="titleField" destination="1IR-w7-VCV" id="xdz-Ey-aWV"/>
                     </connections>
                 </viewController>
@@ -279,7 +290,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dNm-vj-DFQ" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="cKV-13-sJM">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cKV-13-sJM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>

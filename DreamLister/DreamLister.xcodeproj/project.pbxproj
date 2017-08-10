@@ -90,9 +90,9 @@
 		414BF7601F37657900FEBEF2 /* DreamLister */ = {
 			isa = PBXGroup;
 			children = (
-				414E363B1F3B4A4900C0361B /* Controllers */,
-				414BF78A1F3779BD00FEBEF2 /* View */,
 				414BF7861F376ED100FEBEF2 /* Model */,
+				414BF78A1F3779BD00FEBEF2 /* View */,
+				414E363B1F3B4A4900C0361B /* Controllers */,
 				414BF7611F37657900FEBEF2 /* AppDelegate.swift */,
 				414BF7881F37797900FEBEF2 /* TeslaS.jpg */,
 				414BF7651F37657900FEBEF2 /* Main.storyboard */,

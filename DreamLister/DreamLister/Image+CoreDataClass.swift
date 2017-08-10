@@ -9,7 +9,7 @@
 import Foundation
 import CoreData
 
-@objc(Image)
+//@objc(Image)
 public class Image: NSManagedObject {
 
 }
