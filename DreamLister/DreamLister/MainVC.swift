@@ -24,6 +24,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         tableView.delegate = self
         tableView.dataSource = self
         
+//        generateTestData()
         attemptFetch()
         
     }
@@ -149,9 +150,30 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
                 
                 tableView.insertRows(at: [indexPath], with: .fade)
             }
+            break
         }
     }
     
-
+    func generateTestData() {
+        
+        let item = Item(context: context)
+        item.title = "Macbook Pro"
+        item.price = 1800
+        item.details = "Can't wait till the new Macbook Pros come out"
+        
+        let item2 = Item(context: context)
+        item2.title = "Florida Pool House"
+        item2.price = 300000
+        item2.details = "The place to spend the best years of my life"
+        
+        let item3 = Item(context: context)
+        item3.title = "Chevy Bolt"
+        item3.price = 35000
+        item3.details = "Along with solar panaels on the house will work best"
+        
+        ad.saveContext()
+        
+    }
+    
 }
 

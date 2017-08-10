@@ -24,6 +24,12 @@
 		414BF7891F37797900FEBEF2 /* TeslaS.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 414BF7881F37797900FEBEF2 /* TeslaS.jpg */; };
 		414BF78C1F3779DD00FEBEF2 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414BF78B1F3779DD00FEBEF2 /* MaterialView.swift */; };
 		414BF78E1F377E0600FEBEF2 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414BF78D1F377E0600FEBEF2 /* ItemCell.swift */; };
+		414E363D1F3B4AAC00C0361B /* ItemDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414E363C1F3B4AAC00C0361B /* ItemDetailsVC.swift */; };
+		414E36431F3B4C4E00C0361B /* bose.png in Resources */ = {isa = PBXBuildFile; fileRef = 414E363E1F3B4C4E00C0361B /* bose.png */; };
+		414E36441F3B4C4E00C0361B /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414E363F1F3B4C4E00C0361B /* CustomTextField.swift */; };
+		414E36451F3B4C4E00C0361B /* imagePick.png in Resources */ = {isa = PBXBuildFile; fileRef = 414E36401F3B4C4E00C0361B /* imagePick.png */; };
+		414E36461F3B4C4E00C0361B /* mbp.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 414E36411F3B4C4E00C0361B /* mbp.jpg */; };
+		414E36471F3B4C4E00C0361B /* tesla.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 414E36421F3B4C4E00C0361B /* tesla.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +52,12 @@
 		414BF7881F37797900FEBEF2 /* TeslaS.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = TeslaS.jpg; sourceTree = "<group>"; };
 		414BF78B1F3779DD00FEBEF2 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
 		414BF78D1F377E0600FEBEF2 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		414E363C1F3B4AAC00C0361B /* ItemDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailsVC.swift; sourceTree = "<group>"; };
+		414E363E1F3B4C4E00C0361B /* bose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bose.png; sourceTree = "<group>"; };
+		414E363F1F3B4C4E00C0361B /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		414E36401F3B4C4E00C0361B /* imagePick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imagePick.png; sourceTree = "<group>"; };
+		414E36411F3B4C4E00C0361B /* mbp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mbp.jpg; sourceTree = "<group>"; };
+		414E36421F3B4C4E00C0361B /* tesla.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tesla.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,12 +90,16 @@
 		414BF7601F37657900FEBEF2 /* DreamLister */ = {
 			isa = PBXGroup;
 			children = (
+				414E363B1F3B4A4900C0361B /* Controllers */,
 				414BF78A1F3779BD00FEBEF2 /* View */,
 				414BF7861F376ED100FEBEF2 /* Model */,
 				414BF7611F37657900FEBEF2 /* AppDelegate.swift */,
-				414BF7631F37657900FEBEF2 /* MainVC.swift */,
 				414BF7881F37797900FEBEF2 /* TeslaS.jpg */,
 				414BF7651F37657900FEBEF2 /* Main.storyboard */,
+				414E363E1F3B4C4E00C0361B /* bose.png */,
+				414E36401F3B4C4E00C0361B /* imagePick.png */,
+				414E36411F3B4C4E00C0361B /* mbp.jpg */,
+				414E36421F3B4C4E00C0361B /* tesla.jpg */,
 				414BF76B1F37657900FEBEF2 /* Assets.xcassets */,
 				414BF76D1F37657900FEBEF2 /* LaunchScreen.storyboard */,
 				414BF7701F37657900FEBEF2 /* Info.plist */,
@@ -122,6 +138,16 @@
 				414BF78D1F377E0600FEBEF2 /* ItemCell.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		414E363B1F3B4A4900C0361B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				414BF7631F37657900FEBEF2 /* MainVC.swift */,
+				414E363C1F3B4AAC00C0361B /* ItemDetailsVC.swift */,
+				414E363F1F3B4C4E00C0361B /* CustomTextField.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,9 +211,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				414BF76F1F37657900FEBEF2 /* LaunchScreen.storyboard in Resources */,
+				414E36471F3B4C4E00C0361B /* tesla.jpg in Resources */,
+				414E36431F3B4C4E00C0361B /* bose.png in Resources */,
 				414BF7891F37797900FEBEF2 /* TeslaS.jpg in Resources */,
 				414BF76C1F37657900FEBEF2 /* Assets.xcassets in Resources */,
+				414E36451F3B4C4E00C0361B /* imagePick.png in Resources */,
 				414BF7671F37657900FEBEF2 /* Main.storyboard in Resources */,
+				414E36461F3B4C4E00C0361B /* mbp.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,11 +236,13 @@
 				414BF77E1F37683A00FEBEF2 /* Store+CoreDataClass.swift in Sources */,
 				414BF7621F37657900FEBEF2 /* AppDelegate.swift in Sources */,
 				414BF7811F37683A00FEBEF2 /* ItemType+CoreDataProperties.swift in Sources */,
+				414E363D1F3B4AAC00C0361B /* ItemDetailsVC.swift in Sources */,
 				414BF7831F37683A00FEBEF2 /* Item+CoreDataProperties.swift in Sources */,
 				414BF7821F37683A00FEBEF2 /* Item+CoreDataClass.swift in Sources */,
 				414BF76A1F37657900FEBEF2 /* DreamLister.xcdatamodeld in Sources */,
 				414BF7841F37683A00FEBEF2 /* Image+CoreDataClass.swift in Sources */,
 				414BF7851F37683A00FEBEF2 /* Image+CoreDataProperties.swift in Sources */,
+				414E36441F3B4C4E00C0361B /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +406,7 @@
 				414BF7751F37657900FEBEF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

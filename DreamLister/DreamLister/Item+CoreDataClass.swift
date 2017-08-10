@@ -9,7 +9,7 @@
 import Foundation
 import CoreData
 
-@objc(Item)
+//@objc(Item)
 public class Item: NSManagedObject {
 
     public override func awakeFromInsert() {
