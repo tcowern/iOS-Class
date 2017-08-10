@@ -42,7 +42,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ItemCell" rowHeight="150" id="Asz-Xx-9Q3" customClass="ItemCell" customModule="DreamLister">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemCell" rowHeight="150" id="Asz-Xx-9Q3" customClass="ItemCell" customModule="DreamLister">
                                         <rect key="frame" x="0.0" y="28" width="343" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Asz-Xx-9Q3" id="kiO-FN-FIG">
@@ -111,6 +111,9 @@
                                                 <constraint firstItem="hmA-K8-iYy" firstAttribute="leading" secondItem="kiO-FN-FIG" secondAttribute="leading" constant="8" id="wDd-dv-zfk"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <outlet property="details" destination="Z8Z-ic-Zil" id="acf-98-e4c"/>
                                             <outlet property="price" destination="6q9-AY-Mqf" id="UtM-NN-2xv"/>
