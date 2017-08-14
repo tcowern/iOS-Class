@@ -13,6 +13,7 @@
 		415503911F41E8AC0057447D /* GFGeoHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 4155038A1F41E8AC0057447D /* GFGeoHash.m */; };
 		415503921F41E8AC0057447D /* GFGeoHashQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 4155038C1F41E8AC0057447D /* GFGeoHashQuery.m */; };
 		415503931F41E8AC0057447D /* GFQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 4155038E1F41E8AC0057447D /* GFQuery.m */; };
+		415503991F42012F0057447D /* PokeAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415503981F42012F0057447D /* PokeAnnotation.swift */; };
 		418CBDD81F3F5579007C5EDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418CBDD71F3F5579007C5EDC /* AppDelegate.swift */; };
 		418CBDDA1F3F5579007C5EDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418CBDD91F3F5579007C5EDC /* ViewController.swift */; };
 		418CBDDD1F3F5579007C5EDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 418CBDDB1F3F5579007C5EDC /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 		4155038D1F41E8AC0057447D /* GFQuery+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GFQuery+Private.h"; sourceTree = "<group>"; };
 		4155038E1F41E8AC0057447D /* GFQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFQuery.m; sourceTree = "<group>"; };
 		415503941F41EA750057447D /* pokesearch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pokesearch-Bridging-Header.h"; sourceTree = "<group>"; };
+		415503981F42012F0057447D /* PokeAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeAnnotation.swift; sourceTree = "<group>"; };
 		418CBDD41F3F5579007C5EDC /* pokesearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pokesearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		418CBDD71F3F5579007C5EDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		418CBDD91F3F5579007C5EDC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,7 +47,7 @@
 		418CBDDE1F3F5579007C5EDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		418CBDE11F3F5579007C5EDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		418CBDE31F3F5579007C5EDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		418CBDE91F3F55CA007C5EDC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		418CBDE91F3F55CA007C5EDC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		477383C7C2049850B6A58123 /* Pods-pokesearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pokesearch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pokesearch/Pods-pokesearch.debug.xcconfig"; sourceTree = "<group>"; };
 		9975A8CB2939361FAB66DB3F /* Pods-pokesearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pokesearch.release.xcconfig"; path = "Pods/Target Support Files/Pods-pokesearch/Pods-pokesearch.release.xcconfig"; sourceTree = "<group>"; };
 		DEC010DCD2358CB4926C6A96 /* Pods_pokesearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pokesearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,12 +103,34 @@
 			path = Implementation;
 			sourceTree = "<group>";
 		};
+		415503951F4200D30057447D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				418CBDD91F3F5579007C5EDC /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		415503961F4200ED0057447D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				415503981F42012F0057447D /* PokeAnnotation.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		415503971F4200F60057447D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		418CBDCB1F3F5579007C5EDC = {
 			isa = PBXGroup;
 			children = (
 				418CBDD61F3F5579007C5EDC /* pokesearch */,
 				418CBDD51F3F5579007C5EDC /* Products */,
-				418CBDE91F3F55CA007C5EDC /* GoogleService-Info.plist */,
 				7161E7D6465FF035B396E62C /* Pods */,
 				7AFC80E4BEDDB45E34EB82CC /* Frameworks */,
 			);
@@ -123,12 +147,15 @@
 		418CBDD61F3F5579007C5EDC /* pokesearch */ = {
 			isa = PBXGroup;
 			children = (
+				415503961F4200ED0057447D /* Model */,
+				415503971F4200F60057447D /* View */,
+				415503951F4200D30057447D /* Controller */,
 				418CBDD71F3F5579007C5EDC /* AppDelegate.swift */,
-				418CBDD91F3F5579007C5EDC /* ViewController.swift */,
 				418CBDDB1F3F5579007C5EDC /* Main.storyboard */,
 				418CBDDE1F3F5579007C5EDC /* Assets.xcassets */,
 				418CBDE01F3F5579007C5EDC /* LaunchScreen.storyboard */,
 				418CBDE31F3F5579007C5EDC /* Info.plist */,
+				418CBDE91F3F55CA007C5EDC /* GoogleService-Info.plist */,
 				4155037D1F41E8AC0057447D /* GeoFire */,
 				415503941F41EA750057447D /* pokesearch-Bridging-Header.h */,
 			);
@@ -278,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				415503901F41E8AC0057447D /* GFBase32Utils.m in Sources */,
+				415503991F42012F0057447D /* PokeAnnotation.swift in Sources */,
 				418CBDDA1F3F5579007C5EDC /* ViewController.swift in Sources */,
 				415503911F41E8AC0057447D /* GFGeoHash.m in Sources */,
 				418CBDD81F3F5579007C5EDC /* AppDelegate.swift in Sources */,
