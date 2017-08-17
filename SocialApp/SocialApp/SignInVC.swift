@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FBSDKCoreKit
+import FBSDKLoginKit
 
 class SignInVC: UIViewController {
 
@@ -20,6 +22,12 @@ class SignInVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func facebookBtnPressed(_ sender: Any) {
+        
+        
+        
+        
+    }
+    
 
 }
-
